@@ -1,0 +1,30 @@
+{
+  "name": "@anima/core",
+  "version": "0.0.0",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint *.ts*"
+  },
+  "devDependencies": {
+    "@types/debounce": "^1.2.1",
+    "@types/ramda": "^0.28.15",
+    "@types/react-dom": "^18.0.8",
+    "eslint": "^7.32.0",
+    "eslint-config-sensai": "*",
+    "tsconfig": "*",
+    "typescript": "*"
+  },
+  "dependencies": {
+    "@dagrejs/graphlib": "^2.1.4",
+    "@anima/api": "*",
+    "react": "*",
+    "debounce": "^1.2.1",
+    "immer": "^9.0.15",
+    "ramda": "^0.28.0",
+    "use-debounced-effect": "^2.0.1",
+    "valtio": "^1.7.2",
+    "zustand": "4.1.1"
+  }
+}

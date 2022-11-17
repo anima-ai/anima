@@ -1,0 +1,30 @@
+{
+  "name": "sensai-monorepo",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "clean": "rm -rf ./node_modules && rm -rf ./packages/*/node_modules && rm -rf ./apps/*/node_modules && rm -rf ./server/node_modules && rm -rf ./strapi/node_modules && rm -rf ./yarn.lock && rm -rf ./packages/*/yarn.lock && rm -rf ./apps/*/yarn.lock && rm -rf ./server/yarn.lock && rm -rf ./strapi/yarn.lock && yarn",
+    "start": "yarn dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "postinstall": "patch-package"
+  },
+  "devDependencies": {
+    "eslint-config-sensai": "*",
+    "patch-package": "^6.4.7",
+    "prettier": "latest",
+    "turbo": "latest"
+  },
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=14.0.0"
+  },
+  "dependencies": {},
+  "packageManager": "yarn@1.22.5"
+}

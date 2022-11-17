@@ -1,0 +1,24 @@
+{
+  "name": "@anima/supabase",
+  "version": "0.0.0",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "lint": "eslint *.ts*",
+    "supabase:types": "npx supabase gen types typescript --project-id \"lnaqiahlzwtimeuzjtnj\" --schema public > ../core/types/db_types.ts"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-sensai": "*",
+    "tsconfig": "*",
+    "typescript": "*"
+  },
+  "dependencies": {
+    "ramda": "*",
+    "react": "*",
+    "@supabase/auth-helpers-nextjs": "^0.4.2",
+    "@supabase/auth-helpers-react": "^0.3.1",
+    "@supabase/supabase-js": "^2.0.4",
+    "@mantine/notifications": "*"
+  }
+}

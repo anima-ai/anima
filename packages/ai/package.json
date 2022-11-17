@@ -1,0 +1,18 @@
+{
+  "name": "@anima/ai",
+  "version": "0.0.0",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "lint": "eslint *.ts*"
+  },
+  "devDependencies": {
+    "eslint": "*",
+    "eslint-config-sensai": "*",
+    "tsconfig": "*",
+    "typescript": "*"
+  },
+  "dependencies": {
+    "openai": "^3.1.0"
+  }
+}
